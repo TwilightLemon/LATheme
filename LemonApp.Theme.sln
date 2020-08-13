@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LemonApp.Theme.Dtpp", "LemonApp.Theme.Dtpp\LemonApp.Theme.Dtpp.csproj", "{BA1E094D-29F9-4935-B6AC-C93816F79BB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LemonApp.Theme.TheFirstSnow", "LemonApp.Theme.TheFirstSnow\LemonApp.Theme.TheFirstSnow.csproj", "{A8B64E90-1589-41B9-9F81-002FBB418C7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LemonApp.Theme", "LemonApp.Theme\LemonApp.Theme.csproj", "{028E9A17-72CF-4223-9CC8-3531A8B2A685}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LemonApp.Theme.YeStarLight", "LemonApp.Theme.YeStarLight\LemonApp.Theme.YeStarLight.csproj", "{B351BF23-A8F6-48C3-B214-FA6B1AE28C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LemonApp.Theme.TechDMusic", "LemonApp.Theme.TechDMusic\LemonApp.Theme.TechDMusic.csproj", "{F0874D1C-49B9-4B57-A42C-98888AE00093}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA1E094D-29F9-4935-B6AC-C93816F79BB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA1E094D-29F9-4935-B6AC-C93816F79BB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA1E094D-29F9-4935-B6AC-C93816F79BB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA1E094D-29F9-4935-B6AC-C93816F79BB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B64E90-1589-41B9-9F81-002FBB418C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B64E90-1589-41B9-9F81-002FBB418C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B64E90-1589-41B9-9F81-002FBB418C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B64E90-1589-41B9-9F81-002FBB418C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028E9A17-72CF-4223-9CC8-3531A8B2A685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028E9A17-72CF-4223-9CC8-3531A8B2A685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028E9A17-72CF-4223-9CC8-3531A8B2A685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028E9A17-72CF-4223-9CC8-3531A8B2A685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B351BF23-A8F6-48C3-B214-FA6B1AE28C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B351BF23-A8F6-48C3-B214-FA6B1AE28C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B351BF23-A8F6-48C3-B214-FA6B1AE28C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B351BF23-A8F6-48C3-B214-FA6B1AE28C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0874D1C-49B9-4B57-A42C-98888AE00093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0874D1C-49B9-4B57-A42C-98888AE00093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0874D1C-49B9-4B57-A42C-98888AE00093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0874D1C-49B9-4B57-A42C-98888AE00093}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A3E7309-1F13-44D3-8190-5F347B10CDDD}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,67 @@
+﻿<theme:ThemeBase
+      xmlns:theme="clr-namespace:LemonApp.Theme;assembly=LemonApp.Theme"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LemonApp.Theme.TechDMusic"
+      mc:Ignorable="d" 
+      x:Class="LemonApp.Theme.TechDMusic.Drawer"
+      RenderOptions.BitmapScalingMode="LowQuality" d:DesignWidth="997" d:DesignHeight="581">
+    <theme:ThemeBase.Resources>
+        <Storyboard x:Key="RoundAni" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="mainround" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="-360"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Light" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01.5" Value="0.2"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="bgAni" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bgAniOne" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bgAniTwo" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.5" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </theme:ThemeBase.Resources>
+    <Grid x:Name="bg">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="286*"/>
+            <RowDefinition Height="229*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250*"/>
+            <ColumnDefinition Width="785*"/>
+        </Grid.ColumnDefinitions>
+        <Border x:Name="mainround" Height="{Binding ActualWidth, ElementName=mainround, Mode=OneWay}" RenderTransformOrigin="0.49,0.509" VerticalAlignment="Bottom">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.012" Y="0.012"/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <Grid Margin="0,0,0,128" Grid.Row="1" Width="Auto">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Border x:Name="Light" Grid.Column="1" Margin="0,-10,0,0"/>
+            <Border x:Name="border" VerticalAlignment="Bottom" Height="75" Grid.ColumnSpan="3"/>
+        </Grid>
+        <Border x:Name="bgAniOne" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <Border x:Name="bgAniTwo" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+    </Grid>
+</theme:ThemeBase>
