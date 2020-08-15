@@ -1,0 +1,85 @@
+﻿<theme:ThemeBase
+      xmlns:theme="clr-namespace:LemonApp.Theme;assembly=LemonApp.Theme"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LemonApp.Theme.FerrisWheel"
+      mc:Ignorable="d" 
+      x:Class="LemonApp.Theme.FerrisWheel.Drawer"
+      d:DesignWidth="1155.325" d:DesignHeight="596"
+      RenderOptions.BitmapScalingMode="LowQuality">
+    <theme:ThemeBase.Resources>
+        <Storyboard x:Key="RoundAni" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="round" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <EasingDoubleKeyFrame KeyTime="00:00:20" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OtherAni" RepeatBehavior="Forever" AutoReverse="True">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Haidai" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01.6000000" Value="-19.375"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:05" Value="16.481"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="hair" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="-15.437"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:05" Value="9.689"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="ship1" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <EasingThicknessKeyFrame KeyTime="00:00:02.5000000" Value="400,150,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:05.5000000" Value="400,200,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="ship2" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <EasingThicknessKeyFrame KeyTime="00:00:01.6000000" Value="0,25,350,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:04.9000000" Value="0,75,350,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+    </theme:ThemeBase.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="419*"/>
+            <RowDefinition Height="202*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <Viewbox Grid.RowSpan="2" Grid.ColumnSpan="2" Stretch="Fill">
+            <local:CarRunPage x:Name="car"/>
+        </Viewbox>
+        <Border x:Name="round" RenderTransformOrigin="0.503,0.497" Height="{Binding ActualWidth, ElementName=round, Mode=OneWay}" MaxWidth="350" Grid.RowSpan="2">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <Border x:Name="ship2" Grid.Column="1" VerticalAlignment="Top" Height="70" Width="70" HorizontalAlignment="Center" Margin="0,75,350,0"/>
+        <Border x:Name="ship1" Grid.Column="1" Width="70" Height="70" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="400,200,0,0"/>
+        <Border x:Name="dress" VerticalAlignment="Bottom" Height="145" Margin="50,0,0,-24" Grid.Row="1" HorizontalAlignment="Left" Width="151"/>
+        <Border x:Name="hair" VerticalAlignment="Bottom" Height="145" Margin="60,0,0,18" Grid.Row="1" HorizontalAlignment="Left" Width="151" RenderTransformOrigin="0.272,0.269">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <Border x:Name="hat" VerticalAlignment="Bottom" Height="133" Margin="24,0,0,69" HorizontalAlignment="Left" Width="151" Grid.Row="1"/>
+        <Border x:Name="Haidai" VerticalAlignment="Bottom" Height="66" Margin="108,0,0,90" HorizontalAlignment="Left" Width="112" Grid.Row="1" RenderTransformOrigin="0.161,0.333">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+
+    </Grid>
+</theme:ThemeBase>
